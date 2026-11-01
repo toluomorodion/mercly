@@ -1,0 +1,21 @@
+.root {
+  background-color: var(--color-surface-container);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.paddingNone { padding: 0; }
+.paddingSm { padding: 12px; }
+.paddingMd { padding: 24px; }
+.paddingLg { padding: 32px; }
+
+.interactive {
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+  cursor: pointer;
+}
+
+.interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

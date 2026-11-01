@@ -1,0 +1,57 @@
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--color-surface);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+.thumbnail {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: var(--color-surface-variant);
+}
+
+.productInfo {
+  flex: 1;
+}
+
+.productName {
+  font-family: var(--typography-title-title-medium-font-family);
+  font-size: var(--typography-title-title-medium-font-size);
+  font-weight: var(--typography-title-title-medium-font-weight);
+  color: var(--color-on-surface);
+  margin-bottom: 4px;
+}
+
+.productPrice {
+  font-family: var(--typography-body-body-medium-font-family);
+  font-size: var(--typography-body-body-medium-font-size);
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

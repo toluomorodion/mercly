@@ -1,0 +1,125 @@
+.tabs {
+  display: flex;
+  background-color: var(--color-surface-container-high);
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 24px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  font-family: var(--typography-body-body-medium-font-family);
+  font-size: var(--typography-body-body-medium-font-size);
+  font-weight: 500;
+  color: var(--color-on-surface-variant);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.activeTab {
+  background-color: var(--color-surface);
+  color: var(--color-secondary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.title {
+  font-family: var(--typography-headline-headline-medium-font-family);
+  font-size: 20px;
+  font-weight: var(--typography-headline-headline-medium-font-weight);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: var(--typography-body-body-medium-font-family);
+  font-size: var(--typography-body-body-medium-font-size);
+  color: var(--color-tertiary);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: var(--typography-body-body-medium-font-family);
+  font-size: var(--typography-body-body-medium-font-size);
+}
+
+.stepActions {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.stepActions > * {
+  flex: 1;
+}
+
+.link {
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.linkButton {
+  color: var(--color-secondary);
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.linkButton:hover {
+  text-decoration: underline;
+}
+
+.errorSnacker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--color-error-container);
+  color: var(--color-on-error-container);
+  border: 1px solid var(--color-error);
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: var(--typography-body-body-medium-font-family);
+  font-size: var(--typography-body-body-medium-font-size);
+  font-weight: var(--typography-body-body-medium-font-weight);
+  line-height: var(--typography-body-body-medium-line-height);
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 200ms ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

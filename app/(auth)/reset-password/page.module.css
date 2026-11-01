@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.title {
+  font-family: var(--typography-headline-headline-medium-font-family);
+  font-size: var(--typography-headline-headline-medium-font-size);
+  font-weight: var(--typography-headline-headline-medium-font-weight);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: var(--typography-body-body-medium-font-family);
+  font-size: var(--typography-body-body-medium-font-size);
+  color: var(--color-on-surface-variant);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.links {
+  margin-top: 24px;
+  text-align: center;
+  font-family: var(--typography-body-body-medium-font-family);
+  font-size: var(--typography-body-body-medium-font-size);
+}
+
+.link {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.errorMessage {
+  padding: 16px;
+  background-color: var(--color-error-container);
+  color: var(--color-on-error-container);
+  border-radius: 8px;
+  text-align: center;
+  font-family: var(--typography-body-body-medium-font-family);
+  font-size: var(--typography-body-body-medium-font-size);
+  margin-bottom: 24px;
+}

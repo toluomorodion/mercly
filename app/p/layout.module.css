@@ -1,0 +1,25 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface-container-lowest);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  padding: 24px;
+  text-align: center;
+  font-family: var(--typography-body-body-small-font-family);
+  font-size: var(--typography-body-body-small-font-size);
+  color: var(--color-on-surface-variant);
+}
+
+.link {
+  color: var(--color-secondary);
+  font-weight: 700;
+}

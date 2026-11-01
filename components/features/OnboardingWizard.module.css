@@ -1,0 +1,282 @@
+.wizard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.stepDot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  background: var(--color-surface-variant);
+  color: var(--color-on-surface);
+  flex-shrink: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.stepActive {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.connector {
+  width: 64px;
+  height: 2px;
+  background: var(--color-surface-variant);
+  transition: background 0.3s;
+}
+
+.connectorActive {
+  background: var(--color-primary);
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-family: var(--typography-headline-headline-small-font-family);
+  font-size: var(--typography-headline-headline-small-font-size);
+  font-weight: 700;
+  color: var(--color-on-surface);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: var(--typography-body-body-medium-font-size);
+  color: var(--color-tertiary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.descriptionStep1 {
+  margin-top: -12px;
+  text-align: center;
+}
+
+.titleCentered {
+  text-align: center;
+}
+
+.descriptionCentered {
+  text-align: center;
+}
+
+.descriptionReducedGap {
+  margin-top: -12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding-top: 8px;
+}
+
+.actionsColumn {
+  flex-direction: column;
+}
+
+.actionsColumn > * {
+  width: 100%;
+}
+
+.skipLink {
+  background: none;
+  border: none;
+  padding: 8px;
+  font-family: inherit;
+  font-size: var(--typography-body-body-small-font-size);
+  color: var(--color-on-surface-variant);
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.skipLink:hover {
+  color: var(--color-on-surface);
+  text-decoration: underline;
+}
+
+.backLink {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: var(--typography-body-body-small-font-size);
+  color: var(--color-on-surface-variant);
+  cursor: pointer;
+  transition: color 0.2s;
+  text-align: center;
+}
+
+.backLink:hover {
+  color: var(--color-on-surface);
+  text-decoration: underline;
+}
+
+.textareaLabel {
+  display: block;
+  font-family: var(--typography-label-label-medium-font-family);
+  font-size: var(--typography-label-label-medium-font-size);
+  font-weight: var(--typography-label-label-medium-font-weight);
+  line-height: var(--typography-label-label-medium-line-height);
+  letter-spacing: var(--typography-label-label-medium-letter-spacing);
+  color: var(--color-on-surface);
+  margin-bottom: 6px;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-outline);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: var(--typography-body-body-medium-font-size);
+  color: var(--color-on-surface);
+  background: var(--color-surface);
+  resize: vertical;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-container);
+}
+
+.textareaError {
+  border-color: var(--color-error);
+}
+
+.textareaError:focus {
+  border-color: var(--color-error);
+  box-shadow: 0 0 0 2px var(--color-error-container);
+}
+
+.textareaErrorText {
+  font-size: var(--typography-body-body-small-font-size);
+  color: var(--color-error);
+  margin-top: 4px;
+  display: block;
+}
+
+.fieldError {
+  font-size: var(--typography-body-body-small-font-size);
+  color: var(--color-error);
+  margin-top: 4px;
+  display: block;
+}
+
+.successIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.linkBox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.linkInput {
+  flex: 1;
+  padding: 4px 12px;
+  min-height: 44px;
+  border: 1px solid var(--color-outline);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: var(--typography-body-body-small-font-size);
+  color: var(--color-on-surface);
+  background: var(--color-surface-variant);
+  cursor: default;
+  box-sizing: border-box;
+}
+
+.hint {
+  font-size: var(--typography-body-body-small-font-size);
+  color: var(--color-outline);
+  margin: 0;
+  text-align: center;
+}
+
+.step3Content {
+  align-items: center;
+  text-align: center;
+}
+
+.step3Content .linkBox {
+  width: 100%;
+}
+
+.imageUpload {
+  border: 2px dashed var(--color-outline-variant);
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  background-color: var(--color-surface-container-lowest);
+  transition: border-color 200ms ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageUpload:hover {
+  border-color: var(--color-primary);
+}
+
+.imagePreview {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.uploadPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-on-surface-variant);
+  font-family: var(--typography-body-body-medium-font-family);
+  font-size: var(--typography-body-body-medium-font-size);
+}
+
+.fileInput {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}

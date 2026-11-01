@@ -1,0 +1,60 @@
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 24px;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.statHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.statLabel {
+  font-family: var(--typography-label-label-large-font-family);
+  font-size: var(--typography-label-label-large-font-size);
+  font-weight: 600;
+  color: var(--color-on-surface-variant);
+  text-transform: uppercase;
+}
+
+.statValue {
+  font-family: var(--typography-display-display-small-font-family);
+  font-size: var(--typography-display-display-small-font-size);
+  font-weight: var(--typography-display-display-small-font-weight);
+  color: var(--color-tertiary);
+}
+
+.statRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trendBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.trendUp {
+  background-color: color-mix(in srgb, var(--color-primary) 10%, transparent);
+  color: var(--color-primary);
+}
+
+.trendDown {
+  background-color: color-mix(in srgb, var(--color-error) 10%, transparent);
+  color: var(--color-error);
+}

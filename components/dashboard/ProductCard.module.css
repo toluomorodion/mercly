@@ -1,0 +1,73 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--color-surface-container-lowest);
+}
+
+.imageContainer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  background-color: var(--color-surface-variant);
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.name {
+  font-family: var(--typography-title-title-medium-font-family);
+  font-size: var(--typography-title-title-medium-font-size);
+  font-weight: var(--typography-title-title-medium-font-weight);
+  color: var(--color-on-surface);
+  margin-bottom: 4px;
+}
+
+.price {
+  font-family: var(--typography-body-body-large-font-family);
+  font-size: var(--typography-body-body-large-font-size);
+  color: var(--color-tertiary);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.footer button {
+  border-width: 0.2px;
+  width: 48px;
+  height: 48px;
+}
+
+.link {
+}
+
+.deleteBtn {
+  background: none;
+  border: 1px solid var(--color-outline);
+  border-radius: 8px;
+  padding: 8px;
+  color: var(--color-error);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 150ms ease-out;
+}
+
+.deleteBtn:hover {
+  background-color: var(--color-error-container);
+}

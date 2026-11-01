@@ -1,0 +1,12 @@
+.price {
+  font-family: var(--typography-headline-headline-large-font-family);
+  font-size: var(--typography-headline-headline-large-font-size);
+  font-weight: var(--typography-headline-headline-large-font-weight);
+  color: var(--color-on-surface);
+}
+
+.currency {
+  font-size: 0.6em;
+  color: var(--color-on-surface-variant);
+  margin-right: 4px;
+}

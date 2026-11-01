@@ -1,0 +1,27 @@
+.base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-family: var(--typography-label-label-medium-font-family);
+  font-size: var(--typography-label-label-medium-font-size);
+  font-weight: var(--typography-label-label-medium-font-weight);
+  line-height: var(--typography-label-label-medium-line-height);
+  letter-spacing: var(--typography-label-label-medium-letter-spacing);
+}
+
+.pending {
+  background-color: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+}
+
+.paid {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+
+.failed {
+  background-color: var(--color-error-container);
+  color: var(--color-on-error-container);
+}

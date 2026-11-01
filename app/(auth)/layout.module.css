@@ -1,0 +1,32 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: var(--color-surface-container-lowest);
+}
+
+.container {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.logo {
+  font-family: var(--typography-headline-headline-large-font-family);
+  font-size: var(--typography-headline-headline-large-font-size);
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.portalTarget {
+  /* Take no space when empty, but never display:none —
+     display:none can race with React portal injection and
+     prevent the error banner from ever appearing. */
+  min-height: 0;
+}
+
