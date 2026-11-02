@@ -6,9 +6,9 @@ The project explores the development of a web-based product with user authentica
 
 ## Implemented Functionality
 - User Registration: Users can create an account.
-- User Registration: New users can complete the onboarding flow.
+- Onboarding: New users can complete the onboarding flow.
 - Authentication: Registered users can log in.
-- **LIST/CREATE PRODUCT**
+- Product Creation: Registered users can create a new product and instantly generate a unique payment link for the item.
 
 ## Development Status
 Mercly is an ongoing project. The following functionality is not yet complete:
