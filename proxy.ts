@@ -20,7 +20,15 @@ export function proxy(request: NextRequest) {
     .replace(/\s{2,}/g, ' ')
     .trim();
 
-  const response = NextResponse.next();
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set('x-nonce', nonce);
+  requestHeaders.set('Content-Security-Policy', cspHeader);
+
+  const response = NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
   
   response.headers.set('Content-Security-Policy', cspHeader);
   response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');

@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './layout.module.css';
 
+export const dynamic = 'force-dynamic';
+
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (
     <main className={styles.main}>
